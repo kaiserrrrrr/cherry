@@ -73,7 +73,7 @@ sequenceDiagram
         Cherry->>Cherry: init()
     end
 
-    rect rgb(225, 245, 254)
+    rect
         Note over Cherry, DOM: --- PERFORMANCE ---
         Cherry->>DOM: Set loading='lazy' on img/iframe
         Cherry->>DOM: Auto-fix naturalWidth/Height on images
@@ -81,7 +81,7 @@ sequenceDiagram
         Cherry->>DOM: Append 'preconnect' links for Google Fonts
     end
 
-    rect rgb(243, 229, 245)
+    rect
         Note over Cherry, DOM: --- ACCESSIBILITY ---
         Cherry->>DOM: Remove 'aria-hidden' from body
         Cherry->>DOM: Generate IDs/Labels for inputs & textareas
@@ -89,7 +89,7 @@ sequenceDiagram
         Cherry->>DOM: Ensure alt='' and aria-labels on links/buttons
     end
 
-    rect rgb(255, 243, 224)
+    rect
         Note over Cherry, DOM: --- BEST PRACTICES ---
         Cherry->>DOM: Add 'noopener noreferrer' to target='_blank'
         Cherry->>DOM: Reset positive tabindex (>0) to 0
@@ -97,7 +97,7 @@ sequenceDiagram
         Cherry->>DOM: Remove 'http-equiv=refresh' tags
     end
 
-    rect rgb(232, 245, 233)
+    rect
         Note over Cherry, DOM: --- SEO ---
         Cherry->>DOM: Set HTML lang & Charset (UTF-8)
         Cherry->>DOM: Auto-generate Meta Description & Robots tags
@@ -105,6 +105,7 @@ sequenceDiagram
         Cherry->>DOM: Inject hidden H1 & Fix invalid list nesting
     end
 
+    Note over Browser, DOM: Page Optimized Successfully
 ```
 
 ---
