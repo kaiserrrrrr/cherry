@@ -56,6 +56,7 @@ Most performance tools only *report* errors; Cherry **fixes** them. Built on the
 
 ## ❓ How it works
 
+```mermaid
 graph TD
     Start([Script Loaded]) --> CheckState{Document Ready?}
     CheckState -- Yes --> Init[cherry.init]
@@ -104,6 +105,7 @@ graph TD
     Accessibility_Module --> End
     BestPractices_Module --> End
     SEO_Module --> End
+```
 
 ---
 
