@@ -57,54 +57,42 @@ Most performance tools only *report* errors; Cherry **fixes** them. Built on the
 ## ❓ How it works
 
 ```mermaid
-graph TD
-    Start([Script Loaded]) --> CheckState{Document Ready?}
-    CheckState -- Yes --> Init[cherry.init]
-    CheckState -- No --> Wait[Wait for window.load]
-    Wait --> Init
+graph LR
+    Start([Script Loaded]) --> Check{Ready?}
+    Check -- Yes --> Init[cherry.init]
+    Check -- No --> Wait[window.load] --> Init
 
-    subgraph Initialization [cherry.init]
-        Init --> Perf[Performance]
-        Init --> Acc[Accessibility]
-        Init --> BP[BestPractices]
-        Init --> SEO[SEO]
+    subgraph "Performance"
+    Init --> Perf
+    Perf --> P1[Lazy Loading]
+    Perf --> P2[Img Dimensions]
+    Perf --> P3[Passive Events]
+    Perf --> P4[Font Preconnect]
     end
 
-    subgraph Performance_Module [Performance]
-        Perf --> P1[Set img/iframe loading='lazy']
-        Perf --> P2[Auto-fix missing img dimensions]
-        Perf --> P3[Force passive event listeners]
-        Perf --> P4[Inject preconnect links for Fonts]
+    subgraph "Accessibility"
+    Init --> Acc
+    Acc --> A1[Remove aria-hidden]
+    Acc --> A2[Auto Labels/IDs]
+    Acc --> A3[Alt Text & Aria]
+    Acc --> A4[Min Tap Targets]
     end
 
-    subgraph Accessibility_Module [Accessibility]
-        Acc --> A1[Remove aria-hidden from body]
-        Acc --> A2[Auto-generate IDs & Labels for inputs]
-        Acc --> A3[Ensure alt tags on images]
-        Acc --> A4[Set aria-labels for empty links/btns]
-        Acc --> A5[Enforce 44px min-tap target size]
+    subgraph "Best Practices"
+    Init --> BP
+    BP --> B1[Noopener/Rel]
+    BP --> B2[Fix Tabindex]
+    BP --> B3[Enable Paste]
+    BP --> B4[Clear Refresh]
     end
 
-    subgraph BestPractices_Module [Best Practices]
-        BP --> B1[Add noopener to target='_blank']
-        BP --> B2[Reset positive tabindexes to 0]
-        BP --> B3[Stop paste event propagation]
-        BP --> B4[Remove meta-refresh tags]
+    subgraph "SEO"
+    Init --> SEO
+    SEO --> S1[HTML Lang/Charset]
+    SEO --> S2[Meta Tags]
+    SEO --> S3[Viewport]
+    SEO --> S4[H1 & List Fix]
     end
-
-    subgraph SEO_Module [SEO]
-        SEO --> S1[Set HTML lang='en' if missing]
-        SEO --> S2[Ensure charset UTF-8]
-        SEO --> S3[Auto-generate Meta Description/Robots]
-        SEO --> S4[Enforce Viewport settings]
-        SEO --> S5[Inject hidden H1 if missing]
-        SEO --> S6[Fix invalid list nesting]
-    end
-
-    Performance_Module --> End([Optimization Complete])
-    Accessibility_Module --> End
-    BestPractices_Module --> End
-    SEO_Module --> End
 ```
 
 ---
