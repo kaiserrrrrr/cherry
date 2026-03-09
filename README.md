@@ -23,7 +23,7 @@ Most performance tools only *report* errors; Cherry **fixes** them. Built on the
 1. Simply add this in your `<head>` tag:
 
     ```html
-    <script src="https://cdn.jsdelivr.net/gh/kaiserrrrrr/cherry/dist/cherry.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaiserrrrrr/cherry/src/cherry.min.js" async></script>
     ```
 
 **Manually**:
@@ -31,11 +31,11 @@ Most performance tools only *report* errors; Cherry **fixes** them. Built on the
 1. Download the file:
 
     ```bash
-    wget "https://cdn.jsdelivr.net/gh/kaiserrrrrr/cherry/dist/cherry.min.js"
+    wget "https://cdn.jsdelivr.net/gh/kaiserrrrrr/cherry/src/cherry.min.js"
     ```
 
     **OR** download directly:
-    [cherry](https://cdn.jsdelivr.net/gh/kaiserrrrrr/cherry/dist/cherry.min.js)
+    [cherry](https://cdn.jsdelivr.net/gh/kaiserrrrrr/cherry/src/cherry.min.js)
 
 2. Link it from HTML:
 
