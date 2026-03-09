@@ -58,40 +58,42 @@ Most performance tools only *report* errors; Cherry **fixes** them. Built on the
 
 ```mermaid
 graph LR
-    Start([Script Loaded]) --> Check{Ready?}
+    %% Initialization Logic
+    Start([Script Loaded]) --> Check{Document<br/>Ready?}
     Check -- Yes --> Init[cherry.init]
     Check -- No --> Wait[window.load] --> Init
 
-    subgraph "Performance"
-    Init --> Perf
-    Perf --> P1[Lazy Loading]
-    Perf --> P2[Img Dimensions]
-    Perf --> P3[Passive Events]
-    Perf --> P4[Font Preconnect]
+    %% Performance Section
+    subgraph Perf [Performance]
+    Init --> P_Base[Optimize Media]
+    P_Base --> P1[Lazy Loading]
+    P_Base --> P2[Img Dimensions]
+    Init --> P3[Passive Events]
+    Init --> P4[Font Preconnect]
     end
 
-    subgraph "Accessibility"
-    Init --> Acc
-    Acc --> A1[Remove aria-hidden]
-    Acc --> A2[Auto Labels/IDs]
-    Acc --> A3[Alt Text & Aria]
-    Acc --> A4[Min Tap Targets]
+    %% Accessibility Section
+    subgraph Acc [Accessibility]
+    Init --> A1[Body aria-hidden]
+    Init --> A2[Auto Labels/IDs]
+    Init --> A3[Alt Text & Aria]
+    Init --> A4[Min Tap Targets]
     end
 
-    subgraph "Best Practices"
-    Init --> BP
-    BP --> B1[Noopener/Rel]
-    BP --> B2[Fix Tabindex]
-    BP --> B3[Enable Paste]
-    BP --> B4[Clear Refresh]
+    %% Best Practices Section
+    subgraph BP [Best Practices]
+    Init --> B1[Noopener/Rel]
+    Init --> B2[Fix Tabindex]
+    Init --> B3[Enable Paste]
+    Init --> B4[Clear Refresh]
     end
 
-    subgraph "SEO"
-    Init --> SEO
-    SEO --> S1[HTML Lang/Charset]
-    SEO --> S2[Meta Tags]
-    SEO --> S3[Viewport]
-    SEO --> S4[H1 & List Fix]
+    %% SEO Section
+    subgraph SEO_Sub [SEO]
+    Init --> S1[Lang/Charset]
+    Init --> S2[Meta Tags]
+    Init --> S3[Viewport]
+    Init --> S4[H1 & List Fix]
     end
 ```
 
