@@ -1,7 +1,7 @@
 /* Cherry.js v1.0.0
  * ================
  * Semantic js script for frontend optimization
- * Project: https://github.com/Kaiserrrrrr/cherry
+ * Project: https://github.com/kaiserrrrrr/cherry
  */
 
 (function() {
