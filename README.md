@@ -105,7 +105,7 @@ sequenceDiagram
 
 ## 🎨 Built for Blossom
 
-Cherry.js is the definitive technical companion for **[Blossom.css](https://github.com/Kaiserrrrrr/blossom)**. While Blossom provides the visual framework and semantic baseline, Cherry handles the technical enforcement:
+Cherry.js is the definitive technical companion for **[Blossom.css](https://github.com/kaiserrrrrr/blossom)**. While Blossom provides the visual framework and semantic baseline, Cherry handles the technical enforcement:
 
 * **Layout Stability:** Respects Blossom's centering logic (`max-width` and `margin: auto`) while preventing layout jumps.
 * **Theme Native:** Injected UI elements automatically inherit Blossom’s CSS variables (`--bg-color`, `--text-color`, `--btn-bg`).
@@ -123,7 +123,7 @@ Cherry.js is the definitive technical companion for **[Blossom.css](https://gith
 
 ## 📜 License
 
-&copy; Cherry 2026. Code released under the [GNU General Public License v3.0](https://github.com/Kaiserrrrrr/cherry/blob/master/LICENSE).
+&copy; Cherry 2026. Code released under the [GNU General Public License v3.0](https://github.com/kaiserrrrrr/cherry/blob/master/LICENSE).
 
 ---
 Built with 🍒 and Blossom.
