@@ -54,7 +54,7 @@
         window.cherryEnabled = urlParams.get('cherry') === 'true';
         if (window.cherryEnabled) {
             const s = document.createElement('script');
-            s.src = "src/cherry.js";
+            s.src = "src/cherry.min.js";
             s.async = true;
             document.head.appendChild(s);
         }
