@@ -1,4 +1,4 @@
-# 🍒 Cherry
+# Cherry
 
 **A native, zero-config optimization engine for the web.**
 
@@ -6,7 +6,7 @@ Cherry.js is a library designed to bridge the gap between semantic design and te
 
 ---
 
-## 🌟 Why Cherry?
+## Why Cherry?
 
 cherry builds upon the on-the-fly philosophy, ensuring that sites remain optimized without any trade-off:
 
@@ -15,7 +15,7 @@ cherry builds upon the on-the-fly philosophy, ensuring that sites remain optimiz
 
 ---
 
-## 🚀 Installation
+## Installation
 
 **CDN** (*recommended*):
 
@@ -44,7 +44,7 @@ cherry builds upon the on-the-fly philosophy, ensuring that sites remain optimiz
 
 ---
 
-## ❓ How it works
+## How it works
 
 ```mermaid
 sequenceDiagram
@@ -102,7 +102,7 @@ sequenceDiagram
 
 ---
 
-## 🌐 Browsers supported
+## Browsers supported
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Samsung | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Opera |
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
